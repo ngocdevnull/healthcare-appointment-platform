@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-primary: #796EFF;
+  --color-primary-foreground: #ffffff;
+  --color-primary-hover: #6D63E5;
+  --color-secondary: #23A9F9;
+  --color-secondary-foreground: #ffffff;
+  --color-destructive: #ef4444;
+  --color-destructive-foreground: #ffffff;
+  --color-error: #FF5263;
+  --color-error-foreground: #ffffff;
+  --color-warning: #FFF8EA;
+  --color-warning-foreground: #F59E0B;
+  --color-info: #F0F8FF;
+  --color-info-foreground: #38BDF8;
+  --color-success: #ecfdf5;
+  --color-success-foreground: #059669;
+  --color-black-40: #767C84;
+  --color-black-10: #323A46;
+  --color-auth-bg: #F9F9F9;
+  --color-auth-input-border: #D1D3D6;
+  --color-auth-radio-inactive: #49505B;
+  --color-blue: #796EFF;
+  --color-ring: #23A9F9;
+  --color-input: #e5e7eb;
+  --color-input-focus: #23A9F9;
+  --color-input-focus: #23A9F9;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
